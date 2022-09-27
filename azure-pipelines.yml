@@ -20,11 +20,7 @@ steps:
     backendServiceAWS: 'service connection-aws'
     backendAWSBucketName: 'fargatebucket-aws'
     backendAWSKey: 'terraform.tfstate'
-- task: TerraformTaskV3@3
-  inputs:
-    provider: 'aws'
-    command: 'plan'
-    environmentServiceNameAWS: 'service connection-aws'
+
 - task: TerraformTaskV3@3
   inputs:
     provider: 'aws'
